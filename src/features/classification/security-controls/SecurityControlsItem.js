@@ -1,5 +1,6 @@
 // @flow
 import * as React from 'react';
+import isEmpty from 'lodash/isEmpty';
 import { FormattedMessage } from 'react-intl';
 
 import { bdlBoxBlue } from '../../../styles/variables';
@@ -13,9 +14,9 @@ type Props = MessageItem;
 
 const ICON_SIZE = 13;
 
-const SecurityControlsItem = ({ message, tooltipMessage }: Props) => (
+const SecurityControlsItem = ({ formattedCompMessage, message, tooltipMessage }: Props) => (
     <li className="bdl-SecurityControlsItem">
-        <FormattedMessage {...message} />
+        {!isEmpty(formattedCompMessage) ? formattedCompMessage : <FormattedMessage {...message} />}
         {tooltipMessage && (
             <Tooltip
                 className="bdl-SecurityControlsItem-tooltip"

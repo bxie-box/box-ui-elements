@@ -25,7 +25,7 @@ const messages = defineMessages({
         id: 'boxui.securityControls.shortApp',
     },
     shortWatermarking: {
-        defaultMessage: 'Watermarking applied',
+        defaultMessage: 'Watermarking applies',
         description: 'Short summary displayed for classification when watermarking is applied to it',
         id: 'boxui.securityControls.shortWatermarking',
     },
@@ -64,7 +64,7 @@ const messages = defineMessages({
         id: 'boxui.securityControls.sharingCollabAndCompanyOnly',
     },
     watermarkingApplied: {
-        defaultMessage: 'Watermarking will be applied for Previewer Uploaders, Previewers and Viewers.',
+        defaultMessage: 'Watermarking will be applied, click here for more details on Watermarking.',
         description: 'Bullet point that summarizes watermarking applied to classification',
         id: 'boxui.securityControls.watermarkingApplied',
     },

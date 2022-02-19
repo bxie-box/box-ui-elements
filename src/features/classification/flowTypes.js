@@ -59,6 +59,7 @@ type Controls = {
 type ControlsFormat = $Values<typeof SECURITY_CONTROLS_FORMAT>;
 
 type MessageItem = {
+    formattedCompMessage?: Object,
     message: MessageDescriptor,
     tooltipMessage?: MessageDescriptor,
 };
